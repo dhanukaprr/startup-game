@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Journey Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        /* Default Theme: Slate & Sky */
+        --font-body: 'Inter', sans-serif;
+        --font-heading: 'Orbitron', sans-serif;
+
+        --color-bg-primary: #0F172A; /* slate-900 */
+        --color-bg-secondary: #1E293B; /* slate-800 */
+        --color-bg-tertiary: #334155; /* slate-700 */
+        --color-bg-tertiary-hover: #475569; /* slate-600 for hovers on tertiary elements */
+        
+        --color-text-primary: #F1F5F9; /* slate-100 */
+        --color-text-secondary: #94A3B8; /* slate-400 */
+        
+        --color-accent-primary: #38BDF8; /* sky-400 */
+        --color-accent-primary-hover: #0EA5E9; /* sky-500 */
+        --color-accent-secondary: #7DD3FC; /* sky-300 */
+        
+        --color-border-primary: #334155; /* slate-700 */
+        --color-border-secondary: #475569; /* slate-600 for lighter borders */
+
+        --color-button-text: #FFFFFF;
+        --color-button-text-on-accent: #0F172A; /* For text on lighter accent buttons if needed */
+
+        --color-win: #4ADE80; /* green-400 */
+        --color-loss: #F87171; /* red-400 */
+        --color-win-bg: rgba(74, 222, 128, 0.2); /* Adjusted opacity */
+        --color-loss-bg: rgba(248, 113, 113, 0.2); /* Adjusted opacity */
+        --color-win-border: #22C55E; /* green-500 */
+        --color-loss-border: #EF4444; /* red-500 */
+
+        --color-scrollbar-track: #1e293b;
+        --color-scrollbar-thumb: #334155;
+        --color-scrollbar-thumb-hover: #475569;
+      }
+
+      body {
+        font-family: var(--font-body);
+        background-color: var(--color-bg-primary);
+        color: var(--color-text-primary);
+        margin: 0; /* Ensure no default margin */
+      }
+      
+      /* Custom scrollbars */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--color-scrollbar-track);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--color-scrollbar-thumb);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--color-scrollbar-thumb-hover);
+      }
+
+      /* Global selection color */
+      ::selection {
+        background-color: var(--color-accent-primary);
+        color: var(--color-button-text); /* Or a more specific selection text color variable */
+      }
+      ::-moz-selection { /* Firefox */
+        background-color: var(--color-accent-primary);
+        color: var(--color-button-text);
+      }
+
+      /* Ensure root div takes full height */
+      html, body, #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #root {
+        flex-grow: 1;
+      }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script type="importmap">
+      {
+        "imports": {
+          "react/": "https://esm.sh/react@^19.1.0/",
+          "react": "https://esm.sh/react@^19.1.0",
+          "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+          "@google/genai": "https://esm.sh/@google/genai@^1.0.1"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-Dx4GKref.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+<link rel="stylesheet" href="index.css">
