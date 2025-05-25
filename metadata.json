@@ -1,0 +1,6 @@
+{
+  "name": "Startup Journey Game",
+  "description": "An interactive decision tree game where your choices determine the fate of your tech startup. Get AI-powered feedback on your entrepreneurial journey.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
